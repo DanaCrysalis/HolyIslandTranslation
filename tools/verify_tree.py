@@ -134,8 +134,9 @@ def check_maps(mapdir: Path, r: Report):
                f"map###b.dat variants carry the same name and both need "
                f"patching, or the banner reverts on re-entry.")
     for stray in mapdir.rglob("*.bak"):
-        r.warn(f"{stray.name} left behind by mapnames.py -- delete before "
-               f"cutting a patch or it enters the diff")
+        r.warn(f"{stray.name} left behind by apply_names.py or "
+               f"msgtool2 --backup -- delete before cutting a patch or it "
+               f"enters the diff")
 
 
 # --- .msg --------------------------------------------------------------------

@@ -19,12 +19,16 @@ docs/
   TRANSLATION_BRIEF.md  the working prompt, pasteable verbatim
 data/
   item_names.csv        canonical item names, keyed by Big5
+  map_names.csv         English area names, keyed by Big5
   *.example             schemas for the working CSVs (real ones are untracked)
 tools/
   build_english.py      orchestrator: pristine tree -> English tree
   mkpatch.py            bundle/apply the .hip distributable
   verify_tree.py        structural check on a built tree
-  README.md             the other tools, their signatures, and where they live
+  *.py                  the reverse-engineering tools
+  workflow/             translation-side, not part of the build
+  attic/                superseded. Read for history, do not run.
+  README.md             what each tool does and which verify originals
 ```
 
 `docs/FINDINGS.md` is the authoritative document. Everything else is either derived
@@ -69,8 +73,9 @@ Build order is not negotiable — several tools verify original bytes and refuse
 an already-patched file, and one silently corrupts the tree if run late. The orchestrator
 encodes the order; `docs/FINDINGS.md` §9 explains it.
 
-`build_english.py` needs the reverse-engineering tools present in `tools/`. They are not
-in this repository yet — see `tools/README.md`.
+Four tools are still missing — `translate_all.py`, `patch_menu.py`, `make_pstat_en.py`
+and `holytool.py`. The orchestrator names any it cannot find and stops, so the build
+fails cleanly rather than half-completing. See `tools/README.md`.
 
 ## Applying (end users)
 

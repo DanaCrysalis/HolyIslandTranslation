@@ -14,11 +14,12 @@ Order matters. See docs/FINDINGS.md section 9:
   3. patch_banner.py    VERIFIES; one-byte imul 12 -> 16 in the banner routine
   4. patch_menu.py      title-menu alignment on top of the translated strings
   5. make_pstat_en.py   MUST overwrite PStat.GRP -- the only name the exe loads
-  6. mapnames.py        then delete the .bak files it drops
+  6. apply_names.py     keyed by Big5, so the map###b.dat variants that
+                        share a name are covered; then delete its .bak files
   7. msgtool2.py import writes bytes 0..199 only; option tables survive
 
 DATA_DIR holds the translator-side inputs that are NOT part of the game:
-    names.csv             filled-in map area names, for `mapnames.py apply`
+    map_names.csv         English area names keyed by Big5, for apply_names.py
     translated_final.csv  build artifact from the textflow/markerfix pipeline
     option_labels.csv      English choice labels (only needed on a fresh build)
 (translate_all.py and make_pstat_en.py carry their own data.)
@@ -99,8 +100,9 @@ def main():
     pstat = find(a.out, "pstat.grp")
     run(sys.executable, need(T, "make_pstat_en.py"), a.out, pstat)
 
-    print("[7/8] map area names  (mapnames.py apply)")
-    run(sys.executable, need(T, "mapnames.py"), "apply", mapdir, a.data / "names.csv")
+    print("[7/8] map area names  (apply_names.py)")
+    run(sys.executable, need(T, "apply_names.py"), mapdir,
+        "--csv", a.data / "map_names.csv")
     for bak in mapdir.rglob("*.bak"):  # keep .bak out of the diff
         bak.unlink()
 
