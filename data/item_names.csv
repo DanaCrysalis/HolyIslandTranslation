@@ -1,0 +1,17 @@
+big5,canonical,bytes,dialogue_old,inventory_old,role,note
+黑皮書,Black Book,10,Black Book,Black Book,Cave of the God entry,already consistent
+未見箴圖,Unseen Admonition,17,Unseen Admonition Scroll,Unseen Chart,relic 6,"dropped 'Scroll' to fit 19 bytes"
+魂應鼓,Soul Echo Drum,14,Soul Drum,Soul Drum,relic 6 key,"wakes the painting; must stay distinct from 雲雷風鼓"
+拯救亡靈符,Soul Rescue Charm,17,spirit-saving talisman,Soul Rescue Charm,relic 6 trade,"dialogue moves to the inventory string; keep 'talisman' for 枯骨法器"
+蓮花若木,Lotus Ruo-Tree,14,Lotus Ruo-Tree,Lotus Wood,relic 1,"source also spells 蓮花岩木; verify which is in the item table"
+雲雷風鼓,Cloud-Thunder Drum,18,Cloud-Thunder Drum,Storm Drum,relic 2,
+玄白赤鼎,Tricolor Cauldron,17,Black-White-Crimson Cauldron,Tricolor Cauldron,relic 4,"literal form is 28 bytes and does not fit"
+泊天神俑,Heavenbound Effigy,18,Heaven-Anchored Effigy,Sky Figurine,relic 5,"source also spells 泊天神蛹 (typo); same object"
+大眼童屍,Big-Eyed Corpse,15,Big-Eyed Corpse,Big-Eyed Corpse,relic 5 trade,already consistent
+鏟子,Shovel,6,Shovel,Shovel,relic 3 key,digs up the bedroom key
+臥房鑰匙,Bedroom Key,11,Bedroom Key,Bedroom Key,relic 3 key,opens the room holding the Resplendent Slips
+斑瀾文簡,Resplendent Slips,17,Resplendent Bamboo Slips,Mottled Tablet,relic 3,"literal form is 24 bytes and does not fit"
+真絹,True Silk,9,real silk,True Silk,holy item 1,"acrostic: True"
+命石,Life Stone,10,Life Stone,Life Stone,holy item 2,"acrostic: Life"
+天玉,Heavenly Jade,13,Heavenly Jade,Sky Jade,holy item 3,"acrostic: Heaven"
+子燭,Child Candle,12,Child Candle,Small Candle,holy item 4,"acrostic: Child. Source also spells 子鐲 (bracelet) -- if the item table says 鐲 the canonical name is Child Bracelet, 14 bytes"

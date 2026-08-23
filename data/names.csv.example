@@ -1,0 +1,5 @@
+file,hex,original,translation
+# hex is emitted by `mapnames.py dump`; the values below are placeholders
+map001.dat,...,主角的家,Hero's House
+map002.dat,...,孟郡城北,Mengjun City North
+map002b.dat,...,孟郡城北,Mengjun City North
