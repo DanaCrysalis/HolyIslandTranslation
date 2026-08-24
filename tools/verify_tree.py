@@ -151,19 +151,22 @@ def check_maps(mapdir: Path, r: Report):
             if b"\x00" not in f:
                 r.error(f"{p.name}: {label} field at 0x{off:02X} fills all "
                         f"{width} bytes with no terminator")
-        # A clobbered leading byte only MATTERS when the intended target is
-        # present -- 11 maps ship this way pointing at files that do not
-        # exist, and they all work.
+        # 15 map files ship with the first byte of the linked-map name
+        # zeroed. This is NOT damage -- it is how the developers DISABLED a
+        # link, and nulling the first character is the only way to kill one
+        # whose target still exists. Restoring the byte on map035/035a/036 was
+        # tested and is a REGRESSION: garbled terrain, unchanged symptom, and
+        # a harder crash. The engine appears to take the linked map's tile
+        # sheet, which those maps do not share.
+        #
+        # Reported for the record only. There is nothing to fix here.
         f = d[MAP_LINK_OFF:MAP_LINK_OFF + 20]
         if len(f) == 20 and f[0] == 0 and any(0x20 <= c < 0x7F for c in f[1:]):
             tail = f[1:].split(b"\x00")[0].decode("ascii", "replace")
-            if ("m" + tail.lower()) in names_on_disk:
-                r.error(f"{p.name}: linked-map name is NUL+{tail!r} but "
-                        f"M{tail} exists on disk -- the first byte was "
-                        f"clobbered and the link is lost. maplinks.py --fix")
-            else:
-                r.note(f"{p.name}: linked-map name is NUL+{tail!r}; M{tail} is "
-                       f"not on disk either, so this is harmless")
+            present = ("m" + tail.lower()) in names_on_disk
+            r.note(f"{p.name}: linked map disabled (name reads NUL+{tail!r}; "
+                   f"M{tail} {'exists' if present else 'is absent'}). "
+                   f"Intentional -- do not restore.")
 
     for stray in mapdir.rglob("*.bak"):
         r.warn(f"{stray.name} left behind by apply_names.py or "
@@ -200,8 +203,14 @@ def check_msgs(mapdir: Path, r: Report):
                 r.error(f"demo.msg is {len(d)} bytes, expected {DEMO_SIZE} "
                         f"(32 + {DEMO_RECORDS}*{DEMO_REC})")
             else:
+                eng = sum(1 for i in range(DEMO_RECORDS)
+                          if all(c < 0x80 for c in
+                                 d[MSG_FILE_HDR + i * DEMO_REC + DEMO_REC_HDR:
+                                   MSG_FILE_HDR + i * DEMO_REC + DEMO_REC_HDR + 40]
+                                 .split(b"\x00")[0]))
                 r.note(f"demo.msg: {DEMO_RECORDS} records on the 243-byte "
-                       f"stride (untranslated content -- see FINDINGS 11)")
+                       f"stride, {eng} in English (use demotool.py, NOT "
+                       f"msgtool2)")
             continue
 
         body = len(d) - MSG_FILE_HDR
