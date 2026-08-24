@@ -31,6 +31,13 @@ BANNER_IMUL = 0x28FAF          # 6B C0 0C  ->  6B C0 10
 BANNER_ORIG = bytes((0x6B, 0xC0, 0x0C))
 BANNER_PATCHED = bytes((0x6B, 0xC0, 0x10))
 
+# Five 20-byte NUL-padded name fields, then the 15-byte record table at 0x64.
+# 0x50 is the first byte of the linked-map NAME, not a flag: three files in the
+# shipping game hold 0x4D ("M") there, which settles it.
+MAP_FIELDS = [(0x00, 20, "tile sheet"), (0x14, 20, "SFX"),
+              (0x28, 20, "audio set"), (0x3C, 20, "area name"),
+              (0x50, 20, "linked map")]
+MAP_LINK_OFF = 0x50
 MAP_NAME_OFF = 0x3C            # 20-byte Big5 area name
 MAP_FIELD = 20
 
@@ -133,6 +140,31 @@ def check_maps(mapdir: Path, r: Report):
         r.warn(f"{chinese} map(s) still carry a Chinese area name. Remember "
                f"map###b.dat variants carry the same name and both need "
                f"patching, or the banner reverts on re-entry.")
+    # Two distinct problems, deliberately different severities.
+    names_on_disk = {q.name.lower() for q in mapdir.iterdir()}
+    for p in dats:
+        d = p.read_bytes()
+        for off, width, label in MAP_FIELDS:
+            f = d[off:off + width]
+            if len(f) < width:
+                break
+            if b"\x00" not in f:
+                r.error(f"{p.name}: {label} field at 0x{off:02X} fills all "
+                        f"{width} bytes with no terminator")
+        # A clobbered leading byte only MATTERS when the intended target is
+        # present -- 11 maps ship this way pointing at files that do not
+        # exist, and they all work.
+        f = d[MAP_LINK_OFF:MAP_LINK_OFF + 20]
+        if len(f) == 20 and f[0] == 0 and any(0x20 <= c < 0x7F for c in f[1:]):
+            tail = f[1:].split(b"\x00")[0].decode("ascii", "replace")
+            if ("m" + tail.lower()) in names_on_disk:
+                r.error(f"{p.name}: linked-map name is NUL+{tail!r} but "
+                        f"M{tail} exists on disk -- the first byte was "
+                        f"clobbered and the link is lost. maplinks.py --fix")
+            else:
+                r.note(f"{p.name}: linked-map name is NUL+{tail!r}; M{tail} is "
+                       f"not on disk either, so this is harmless")
+
     for stray in mapdir.rglob("*.bak"):
         r.warn(f"{stray.name} left behind by apply_names.py or "
                f"msgtool2 --backup -- delete before cutting a patch or it "

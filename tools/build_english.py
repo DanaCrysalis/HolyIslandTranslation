@@ -12,14 +12,20 @@ Order matters. See docs/FINDINGS.md section 9:
   1. translate_all.py   VERIFIES original bytes; refuses an already-patched exe
   2. exestrings.py      idempotent; dialog labels, combat log, cheat feedback
   3. patch_banner.py    VERIFIES; one-byte imul 12 -> 16 in the banner routine
-  4. patch_menu.py      title-menu alignment on top of the translated strings
-  5. make_pstat_en.py   MUST overwrite PStat.GRP -- the only name the exe loads
+
+There is NO patch_menu.py. A byte diff of the pristine and shipped executables
+shows exactly ONE code change in the whole image -- the banner imul at
+0x28FB1. The title menu is aligned by leading spaces inside its strings
+("  EXIT", "  AUDIO"), which travel in the string table like any other text.
+  4. make_pstat_en.py   MUST overwrite PStat.GRP -- the only name the exe loads
   6. apply_names.py     keyed by Big5, so the map###b.dat variants that
                         share a name are covered; then delete its .bak files
   7. msgtool2.py import writes bytes 0..199 only; option tables survive
 
 DATA_DIR holds the translator-side inputs that are NOT part of the game:
     map_names.csv         English area names keyed by Big5, for apply_names.py
+    strings_worksheet.csv game.exe UI / item / spell tables, for translate_all.py
+    pstat_en.bin          status-panel pixel overlay, for make_pstat_en.py
     translated_final.csv  build artifact from the textflow/markerfix pipeline
     option_labels.csv      English choice labels (only needed on a fresh build)
 (translate_all.py and make_pstat_en.py carry their own data.)
@@ -76,37 +82,33 @@ def main():
 
     if a.out.exists():
         shutil.rmtree(a.out)
-    print(f"[1/8] copy pristine tree -> {a.out}")
+    print(f"[1/7] copy pristine tree -> {a.out}")
     shutil.copytree(a.game, a.out)
 
     exe = find(a.out, "game.exe")
     mapdir = find(a.out, "map")
 
-    print("[2/8] game.exe string tables  (translate_all.py -- needs pristine bytes)")
-    run(sys.executable, need(T, "translate_all.py"), exe, "-o", exe)
+    print("[2/7] game.exe string tables  (translate_all.py -- needs pristine bytes)")
+    run(sys.executable, need(T, "translate_all.py"), exe, "-o", exe,
+        "--csv", a.data / "strings_worksheet.csv")
 
-    print("[3/8] engine dialogs, combat log, cheat feedback  (exestrings.py)")
+    print("[3/7] engine dialogs, combat log, cheat feedback  (exestrings.py)")
     run(sys.executable, need(T, "exestrings.py"), "apply", exe, "-o", exe)
 
-    print("[4/8] banner width  imul 12 -> 16  (patch_banner.py)")
+    print("[4/7] banner width  imul 12 -> 16  (patch_banner.py)")
     run(sys.executable, need(T, "patch_banner.py"), exe, "-o", exe)
 
-    print("[5/8] title-menu alignment  (patch_menu.py)")
-    # If patch_menu also insists on pristine bytes it collides with step 2;
-    # reconcile before shipping. See FINDINGS section 9, step 4.
-    run(sys.executable, need(T, "patch_menu.py"), exe, "-o", exe)
+    print("[5/7] status panel -> PStat.GRP  (the only name the exe loads)")
+    run(sys.executable, need(T, "make_pstat_en.py"), a.out,
+        "--delta", a.data / "pstat_en.bin")
 
-    print("[6/8] status panel -> PStat.GRP  (the only name the exe loads)")
-    pstat = find(a.out, "pstat.grp")
-    run(sys.executable, need(T, "make_pstat_en.py"), a.out, pstat)
-
-    print("[7/8] map area names  (apply_names.py)")
+    print("[6/7] map area names  (apply_names.py)")
     run(sys.executable, need(T, "apply_names.py"), mapdir,
         "--csv", a.data / "map_names.csv")
     for bak in mapdir.rglob("*.bak"):  # keep .bak out of the diff
         bak.unlink()
 
-    print("[8/8] dialogue  (msgtool2.py import)")
+    print("[7/7] dialogue  (msgtool2.py import)")
     run(sys.executable, need(T, "msgtool2.py"), "import", mapdir,
         a.data / "translated_final.csv", "--max-bytes", str(PROMPT_CAP))
     if a.fresh_labels:

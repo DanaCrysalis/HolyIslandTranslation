@@ -1,0 +1,437 @@
+﻿kind,offset,ds,index,max_bytes,chinese,english
+ui,0x089CCC,0x002CC,,3,否,No
+ui,0x089CD0,0x002D0,,3,是,Yes
+ui,0x089CD4,0x002D4,,19,是否離開DEMO程式？,Quit the demo?
+ui,0x089DF8,0x003F8,,15,請輸入作弊代碼,Cheat code:
+ui,0x089E24,0x00424,,7,取得%s,Got %s
+ui,0x089E2C,0x0042C,,7,血全滿,Max HP
+ui,0x089E34,0x00434,,11,取得鑰匙,Got keys
+ui,0x089E40,0x00440,,19,得金錢１００００,Got 10000 gold
+ui,0x089E54,0x00454,,11,系統重置,Reset
+ui,0x089E60,0x00460,,11,全體復活,Revive
+ui,0x089E6C,0x0046C,,15,寫入系統檢查,Sys check
+ui,0x089E7C,0x0047C,,15,取得系統物件,Get objects
+ui,0x089E8C,0x0048C,,15,開啟一擊必殺,One-hit: ON
+ui,0x089E9C,0x0049C,,15,關閉一擊必殺,One-hit: OFF
+ui,0x089EAC,0x004AC,,15,關閉遊戲怪物,Monsters OFF
+ui,0x089EBC,0x004BC,,15,開啟遊戲怪物,Monsters ON
+ui,0x089ECC,0x004CC,,7,開啟,ON
+ui,0x089ED4,0x004D4,,7,關閉,OFF
+ui,0x089EDC,0x004DC,,11,%s強力裝甲,%s armor up
+ui,0x089EE8,0x004E8,,11,請輸入姓名,Enter name
+ui,0x089EF4,0x004F4,,7,繼續,Retype
+ui,0x089EFC,0x004FC,,7,確定,OK
+ui,0x089F04,0x00504,,23,是否確定使用預設姓名？,Use the default name?
+ui,0x089F1C,0x0051C,,23,是否確定使用新姓名？,Use this new name?
+ui,0x08A010,0x00610,,7,使用%s,Use %s
+ui,0x08A198,0x00798,,7,學會%s,Got %s
+ui,0x08A1A0,0x007A0,,7,%s升級,%s up!
+ui,0x08A1A8,0x007A8,,15,%s對%s使用%s,%s -> %s: %s
+ui,0x08A318,0x00918,,19,%s負重量已超出限制,%s is overloaded
+ui,0x08A32C,0x0092C,,15,%s身體開始溫熱,%s feels warm
+ui,0x08A33C,0x0093C,,15,%s身體不再溫熱,%s cools down
+ui,0x08A4F4,0x00AF4,,7,取消,Cancel
+ui,0x08A4FC,0x00AFC,,7,啟動,Open
+ui,0x08A504,0x00B04,,23,是否啟動遊戲主選單？,Open the main menu?
+ui,0x08A51C,0x00B1C,,7,離開,Exit
+ui,0x08A524,0x00B24,,19,是否離開遊戲程式？,Quit the game?
+ui,0x08A688,0x00C88,,19,%s負重量已超出限制,%s is overloaded
+ui,0x08A7B0,0x00DB0,,3,水,WTR
+ui,0x08A7B4,0x00DB4,,3,火,FIR
+ui,0x08A7B8,0x00DB8,,3,風,WND
+ui,0x08A7BC,0x00DBC,,3,地,ERT
+ui,0x08A7C0,0x00DC0,,3,技,SK
+ui,0x08A7C8,0x00DC8,,11,一般攻擊,ATTACK
+ui,0x08A910,0x00F10,,11,重 新 開 始,NEW GAME
+ui,0x08A91C,0x00F1C,,11,讀 取 進 度,LOAD GAME
+ui,0x08A928,0x00F28,,11,系 統 設 定,SETTINGS
+ui,0x08A934,0x00F34,,11,退 出 系 統,  EXIT
+ui,0x08A940,0x00F40,,15,系統速度  @@,SPEED   @@
+ui,0x08A950,0x00F50,,15,訊息速度  @@,TEXT    @@
+ui,0x08A960,0x00F60,,11,音 樂 音 效,  AUDIO
+ui,0x08A96C,0x00F6C,,11,背景音樂,MUSIC
+ui,0x08A978,0x00F78,,11,系統音效,SOUND
+ui,0x08A984,0x00F84,,3,快,F
+ui,0x08A988,0x00F88,,3,中,M
+ui,0x08A98C,0x00F8C,,3,慢,S
+ui,0x08AF40,0x01540,,15,寫入遊戲進度,Saving game...
+ui,0x08AFCC,0x015CC,,47,從危機遍佈的禁地深處到一望無際的湛藍天空下！,From the forbidden depths to the open sky --
+ui,0x08AFFC,0x015FC,,43,你將尋找隱藏在這個世界的巨大秘密，憑藉自己,"you will seek this world's great secret,"
+ui,0x08B028,0x01628,,43,的思考決定命運，依靠自己的雙手開創未來！,shaping fate with your own two hands!
+ui,0x08B054,0x01654,,35,～  語出  終極歷程的不朽先知  ～,~  The Immortal Prophet  ~
+ui,0x08B1BC,0x017BC,,7,英數,ABC
+ui,0x08B1C4,0x017C4,,7,注音,PHO
+ui,0x08B244,0x01844,,7,無此字,No char
+item,0x08CD68,0x03368,0,19,木劍,Wooden Sword
+item,0x08CDBC,0x033BC,1,19,斬鐵劍,Iron Cleaver
+item,0x08CE10,0x03410,2,19,長劍,Long Sword
+item,0x08CE64,0x03464,3,19,古銅劍,Bronze Sword
+item,0x08CEB8,0x034B8,4,19,金砂劍,Goldsand Sword
+item,0x08CF0C,0x0350C,5,19,兀鷹劍,Vulture Sword
+item,0x08CF60,0x03560,6,19,巨劍,Great Sword
+item,0x08CFB4,0x035B4,7,19,象牙劍,Ivory Sword
+item,0x08D008,0x03608,8,19,力拔劍,Might Sword
+item,0x08D05C,0x0365C,9,19,鴻鵠劍,Swan Sword
+item,0x08D0B0,0x036B0,10,19,紫烏劍,Dark Raven Sword
+item,0x08D104,0x03704,11,19,蒼天劍,Azure Sky Sword
+item,0x08D158,0x03758,12,19,撕裂劍,Rending Sword
+item,0x08D1AC,0x037AC,13,19,霸王劍,Overlord Sword
+item,0x08D200,0x03800,14,19,龍劍,Dragon Sword
+item,0x08D254,0x03854,15,19,木杖,Wooden Staff
+item,0x08D2A8,0x038A8,16,19,檜木杖,Cypress Staff
+item,0x08D2FC,0x038FC,17,19,鐵杖,Iron Staff
+item,0x08D350,0x03950,18,19,青銅杖,Bronze Staff
+item,0x08D3A4,0x039A4,19,19,銀岩杖,Silverrock Staff
+item,0x08D3F8,0x039F8,20,19,純金杖,Pure Gold Staff
+item,0x08D44C,0x03A4C,21,19,水晶杖,Crystal Staff
+item,0x08D4A0,0x03AA0,22,19,黑石杖,Blackstone Staff
+item,0x08D4F4,0x03AF4,23,19,桃花杖,Peachwood Staff
+item,0x08D548,0x03B48,24,19,朱雀杖,Vermilion Staff
+item,0x08D59C,0x03B9C,25,19,鳳鳴杖,Phoenix Staff
+item,0x08D5F0,0x03BF0,26,19,幻璧杖,Illusion Staff
+item,0x08D644,0x03C44,27,19,虹玉杖,Rainbow Jade Staff
+item,0x08D698,0x03C98,28,19,滅妖杖,Demonbane Staff
+item,0x08D6EC,0x03CEC,29,19,鐵斧,Iron Axe
+item,0x08D740,0x03D40,30,19,戰斧,Battle Axe
+item,0x08D794,0x03D94,31,19,巨斧,Great Axe
+item,0x08D7E8,0x03DE8,32,19,破山斧,Mountainbreak Axe
+item,0x08D83C,0x03E3C,33,19,縛虎斧,Tigerbind Axe
+item,0x08D890,0x03E90,34,19,地動斧,Earthquake Axe
+item,0x08D8E4,0x03EE4,35,19,嘯雲斧,Cloudhowl Axe
+item,0x08D938,0x03F38,36,19,碎骨斧,Bonecrusher Axe
+item,0x08D98C,0x03F8C,37,19,腰斬斧,Cleaver Axe
+item,0x08D9E0,0x03FE0,38,19,閃擊斧,Lightning Axe
+item,0x08DA34,0x04034,39,19,暴風斧,Storm Axe
+item,0x08DA88,0x04088,40,19,盡殺斧,Slaughter Axe
+item,0x08DADC,0x040DC,41,19,宣花斧,Blossom Axe
+item,0x08DB30,0x04130,42,19,狂舞斧,Wild Dance Axe
+item,0x08DB84,0x04184,43,19,龍斧,Dragon Axe
+item,0x08DBD8,0x041D8,44,19,長槍,Long Spear
+item,0x08DC2C,0x0422C,45,19,尖槍,Sharp Spear
+item,0x08DC80,0x04280,46,19,鐵槍,Iron Spear
+item,0x08DCD4,0x042D4,47,19,丈八槍,Ten-Foot Spear
+item,0x08DD28,0x04328,48,19,蛇茅槍,Serpent Spear
+item,0x08DD7C,0x0437C,49,19,點鋼槍,Tempered Spear
+item,0x08DDD0,0x043D0,50,19,鏢環槍,Ringed Spear
+item,0x08DE24,0x04424,51,19,黃石槍,Yellowstone Spear
+item,0x08DE78,0x04478,52,19,漁津槍,Fisher Spear
+item,0x08DECC,0x044CC,53,19,蜈蚣槍,Centipede Spear
+item,0x08DF20,0x04520,54,19,菊花槍,Chrysanth Spear
+item,0x08DF74,0x04574,55,19,勁攻槍,Piercing Spear
+item,0x08DFC8,0x045C8,56,19,惡式槍,Wicked Spear
+item,0x08E01C,0x0461C,57,19,神憂槍,Sorrow Spear
+item,0x08E070,0x04670,58,19,龍槍,Dragon Spear
+item,0x08E0C4,0x046C4,59,19,皮帽,Leather Cap
+item,0x08E118,0x04718,60,19,赤鐵盔,Red Iron Helm
+item,0x08E16C,0x0476C,61,19,銅盔,Bronze Helm
+item,0x08E1C0,0x047C0,62,19,金鍊盔,Gold Chain Helm
+item,0x08E214,0x04814,63,19,黑纓盔,Black Plume Helm
+item,0x08E268,0x04868,64,19,蟒鱗盔,Python Scale Helm
+item,0x08E2BC,0x048BC,65,19,月牙盔,Crescent Helm
+item,0x08E310,0x04910,66,19,獅蠻盔,Lion Helm
+item,0x08E364,0x04964,67,19,碧海盔,Blue Sea Helm
+item,0x08E3B8,0x049B8,68,19,戰將盔,General's Helm
+item,0x08E40C,0x04A0C,69,19,通天盔,Skyward Helm
+item,0x08E460,0x04A60,70,19,丹絲帶,Crimson Band
+item,0x08E4B4,0x04AB4,71,19,蕉絲帶,Banana Silk Band
+item,0x08E508,0x04B08,72,19,桃斯帶,Peach Band
+item,0x08E55C,0x04B5C,73,19,香絲帶,Fragrant Band
+item,0x08E5B0,0x04BB0,74,19,煙絲帶,Smoke Band
+item,0x08E604,0x04C04,75,19,蓉絲帶,Lotus Band
+item,0x08E658,0x04C58,76,19,梨絲帶,Pear Band
+item,0x08E6AC,0x04CAC,77,19,星絲帶,Star Band
+item,0x08E700,0x04D00,78,19,辰絲帶,Astral Band
+item,0x08E754,0x04D54,79,19,泣絲帶,Weeping Band
+item,0x08E7A8,0x04DA8,80,19,火絲帶,Fire Band
+item,0x08E7FC,0x04DFC,81,19,絲布頭巾,Silk Headband
+item,0x08E850,0x04E50,82,19,生絲頭巾,Raw Silk Headband
+item,0x08E8A4,0x04EA4,83,19,虎皮頭巾,Tigerskin Headband
+item,0x08E8F8,0x04EF8,84,19,漆羅頭巾,Lacquer Headband
+item,0x08E94C,0x04F4C,85,19,晃日頭巾,Sunlight Headband
+item,0x08E9A0,0x04FA0,86,19,惡來頭巾,Elai Headband
+item,0x08E9F4,0x04FF4,87,19,五彩頭巾,Rainbow Headband
+item,0x08EA48,0x05048,88,19,索妖頭巾,Demonbind Headband
+item,0x08EA9C,0x0509C,89,19,飛宙頭巾,Skyflight Headband
+item,0x08EAF0,0x050F0,90,19,幽遊頭巾,Wraith Headband
+item,0x08EB44,0x05144,91,19,皮甲,Leather Armor
+item,0x08EB98,0x05198,92,19,赤鐵甲,Red Iron Armor
+item,0x08EBEC,0x051EC,93,19,銅甲,Bronze Armor
+item,0x08EC40,0x05240,94,19,鍊甲,Chain Armor
+item,0x08EC94,0x05294,95,19,鎖子甲,Chainmail
+item,0x08ECE8,0x052E8,96,19,火藤甲,Firevine Armor
+item,0x08ED3C,0x0533C,97,19,地禦甲,Earthward Armor
+item,0x08ED90,0x05390,98,19,雨抗甲,Rainguard Armor
+item,0x08EDE4,0x053E4,99,19,移風甲,Windshift Armor
+item,0x08EE38,0x05438,100,19,黃金鳳錦衣,Gold Phoenix Robe
+item,0x08EE8C,0x0548C,101,19,天羅甲,Skynet Armor
+item,0x08EEE0,0x054E0,102,19,渾鋼甲,Solid Steel Armor
+item,0x08EF34,0x05534,103,19,豹眼甲,Panther Eye Armor
+item,0x08EF88,0x05588,104,19,銀箍甲,Silver Hoop Armor
+item,0x08EFDC,0x055DC,105,19,龍爪甲,Dragonclaw Armor
+item,0x08F030,0x05630,106,19,霞鳴甲,Sunglow Armor
+item,0x08F084,0x05684,107,19,軍電甲,Warbolt Armor
+item,0x08F0D8,0x056D8,108,19,扶駕甲,Escort Armor
+item,0x08F12C,0x0572C,109,19,洸檳甲,Shining Armor
+item,0x08F180,0x05780,110,19,龍王甲,Dragon King Armor
+item,0x08F1D4,0x057D4,111,19,水絲衣,Watersilk Robe
+item,0x08F228,0x05828,112,19,束彩衣,Bound Color Robe
+item,0x08F27C,0x0587C,113,19,柳葉衣,Willowleaf Robe
+item,0x08F2D0,0x058D0,114,19,巧繡衣,Embroidered Robe
+item,0x08F324,0x05924,115,19,臘雪衣,Winter Snow Robe
+item,0x08F378,0x05978,116,19,火綾服,Firesilk Garb
+item,0x08F3CC,0x059CC,117,19,地遮服,Earthveil Garb
+item,0x08F420,0x05A20,118,19,止雨服,Rainstop Garb
+item,0x08F474,0x05A74,119,19,裹風服,Windwrap Garb
+item,0x08F4C8,0x05AC8,120,19,青蘿衣,Green Vine Robe
+item,0x08F51C,0x05B1C,121,19,散冰衣,Icescatter Robe
+item,0x08F570,0x05B70,122,19,引玉衣,Jadedraw Robe
+item,0x08F5C4,0x05BC4,123,19,花璨衣,Blossom Robe
+item,0x08F618,0x05C18,124,19,龍袖衣,Dragonsleeve Robe
+item,0x08F66C,0x05C6C,125,19,輕布袍,Light Cloth Gown
+item,0x08F6C0,0x05CC0,126,19,鍛絞袍,Forged Gown
+item,0x08F714,0x05D14,127,19,鑄冶袍,Cast Gown
+item,0x08F768,0x05D68,128,19,翻波袍,Wavecrest Gown
+item,0x08F7BC,0x05DBC,129,19,新月袍,New Moon Gown
+item,0x08F810,0x05E10,130,19,阻火袍,Fireblock Gown
+item,0x08F864,0x05E64,131,19,地琢袍,Earthcarve Gown
+item,0x08F8B8,0x05EB8,132,19,消雨袍,Raindispel Gown
+item,0x08F90C,0x05F0C,133,19,卻風袍,Windrepel Gown
+item,0x08F960,0x05F60,134,19,蜻染袍,Dragonfly Gown
+item,0x08F9B4,0x05FB4,135,19,撼天袍,Skyshaker Gown
+item,0x08FA08,0x06008,136,19,纏銀袍,Silverwind Gown
+item,0x08FA5C,0x0605C,137,19,錦征袍,Brocade Gown
+item,0x08FAB0,0x060B0,138,19,掀龍袍,Dragonrise Gown
+item,0x08FB04,0x06104,139,19,布鞋,Cloth Shoes
+item,0x08FB58,0x06158,140,19,牛皮鞋,Oxhide Shoes
+item,0x08FBAC,0x061AC,141,19,烏皮靴,Black Boots
+item,0x08FC00,0x06200,142,19,鹿皮靴,Deerskin Boots
+item,0x08FC54,0x06254,143,19,武人靴,Warrior Boots
+item,0x08FCA8,0x062A8,144,19,武功靴,Martial Boots
+item,0x08FCFC,0x062FC,145,19,粉褶靴,Pleated Boots
+item,0x08FD50,0x06350,146,19,攻防靴,Battle Boots
+item,0x08FDA4,0x063A4,147,19,織華靴,Woven Boots
+item,0x08FDF8,0x063F8,148,19,武聖靴,Warsaint Boots
+item,0x08FE4C,0x0644C,149,19,玄駒靴,Dark Steed Boots
+item,0x08FEA0,0x064A0,150,19,輕巧戒指,Nimble Ring
+item,0x08FEF4,0x064F4,151,19,疾風戒指,Gale Ring
+item,0x08FF48,0x06548,152,19,快意戒指,Swift Ring
+item,0x08FF9C,0x0659C,153,19,阿飛戒指,Drifter Ring
+item,0x08FFF0,0x065F0,154,19,珊瑚戒指,Coral Ring
+item,0x090044,0x06644,155,19,護身戒指,Guard Ring
+item,0x090098,0x06698,156,19,虎眼戒指,Tiger Eye Ring
+item,0x0900EC,0x066EC,157,19,龜殼戒指,Turtle Shell Ring
+item,0x090140,0x06740,158,19,救命戒指,Lifesave Ring
+item,0x090194,0x06794,159,19,鐵血戒指,Ironblood Ring
+item,0x0901E8,0x067E8,160,19,士氣戒指,Morale Ring
+item,0x09023C,0x0683C,161,19,騎士戒指,Knight Ring
+item,0x090290,0x06890,162,19,劍客戒指,Swordsman Ring
+item,0x0902E4,0x068E4,163,19,豹牙戒指,Panther Fang Ring
+item,0x090338,0x06938,164,19,猛烈戒指,Fierce Ring
+item,0x09038C,0x0698C,165,19,神勇戒指,Valor Ring
+item,0x0903E0,0x069E0,166,19,反擊戒指,Riposte Ring
+item,0x090434,0x06A34,167,19,震盪戒指,Shock Ring
+item,0x090488,0x06A88,168,19,清水戒指,Clearwater Ring
+item,0x0904DC,0x06ADC,169,19,頑石戒指,Bedrock Ring
+item,0x090530,0x06B30,170,19,無影戒指,Shadowless Ring
+item,0x090584,0x06B84,171,19,徹骨戒指,Bonechill Ring
+item,0x0905D8,0x06BD8,172,19,大聖戒指,Great Sage Ring
+item,0x09062C,0x06C2C,173,19,保險戒指,Safeguard Ring
+item,0x090680,0x06C80,174,19,神密戒玉,Mystic Jade Ring
+item,0x0906D4,0x06CD4,175,19,月冠戒指,Moon Crown Ring
+item,0x090728,0x06D28,176,19,威武戒指,Mighty Ring
+item,0x09077C,0x06D7C,177,19,鐵砂戒指,Ironsand Ring
+item,0x0907D0,0x06DD0,178,19,大力戒指,Power Ring
+item,0x090824,0x06E24,179,19,陰影戒指,Shade Ring
+item,0x090878,0x06E78,180,19,惡神戒指,Evil God Ring
+item,0x0908CC,0x06ECC,181,19,金鋼槌,Adamant Hammer
+item,0x090920,0x06F20,182,19,回復檸檬,Healing Lemon
+item,0x090974,0x06F74,183,19,回復甘草,Healing Licorice
+item,0x0909C8,0x06FC8,184,19,紫果,Purple Fruit
+item,0x090A1C,0x0701C,185,19,印度神藥,Indian Elixir
+item,0x090A70,0x07070,186,19,薄葵葉,Mallow Leaf
+item,0x090AC4,0x070C4,187,19,甲蟲鬚,Beetle Whisker
+item,0x090B18,0x07118,188,19,棗核,Date Pit
+item,0x090B6C,0x0716C,189,19,暈砂,Dizzy Sand
+item,0x090BC0,0x071C0,190,19,靈氣蘋果,Spirit Apple
+item,0x090C14,0x07214,191,19,麻辣散,Numbing Powder
+item,0x090C68,0x07268,192,19,青芽薑,Green Ginger
+item,0x090CBC,0x072BC,193,19,紅蘆筍,Red Asparagus
+item,0x090D10,0x07310,194,19,雀尾,Sparrow Tail
+item,0x090D64,0x07364,195,19,荷梗膏,Lotus Salve
+item,0x090DB8,0x073B8,196,19,猥索臉皮,Brazen Mask
+item,0x090E0C,0x0740C,197,19,鵝毛翎,Goose Quill
+item,0x090E60,0x07460,198,19,飛地石,Warp Stone
+item,0x090EB4,0x074B4,199,19,難忘之翼,Wing of Memory
+item,0x090F08,0x07508,200,19,紙油傘,Oilpaper Umbrella
+item,0x090F5C,0x0755C,201,19,疲勞花粉,Fatigue Pollen
+item,0x090FB0,0x075B0,202,19,閃光彈,Flash Bomb
+item,0x091004,0x07604,203,19,美酒,Fine Wine
+item,0x091058,0x07658,204,19,金錢,Gold
+item,0x0910AC,0x076AC,205,19,回復,Recover
+item,0x091100,0x07700,206,19,水波,Water Wave
+item,0x091154,0x07754,207,19,冷凍,Freeze
+item,0x0911A8,0x077A8,208,19,疲倦,Fatigue
+item,0x0911FC,0x077FC,209,19,水鬼,Water Wraith
+item,0x091250,0x07850,210,19,水壓,Water Press
+item,0x0912A4,0x078A4,211,19,水柱,Water Column
+item,0x0912F8,0x078F8,212,19,冰蜂,Ice Bee
+item,0x09134C,0x0794C,213,19,血雨,Blood Rain
+item,0x0913A0,0x079A0,214,19,水神召喚,Summon Water God
+item,0x0913F4,0x079F4,215,19,星火,Starfire
+item,0x091448,0x07A48,216,19,火燄,Flame
+item,0x09149C,0x07A9C,217,19,虹彩,Rainbow
+item,0x0914F0,0x07AF0,218,19,火弩,Fire Bolt
+item,0x091544,0x07B44,219,19,吸血手,Bloodsuck Hand
+item,0x091598,0x07B98,220,19,閃電,Lightning
+item,0x0915EC,0x07BEC,221,19,火海,Sea of Fire
+item,0x091640,0x07C40,222,19,爆破,Explosion
+item,0x091694,0x07C94,223,19,火龍,Fire Dragon
+item,0x0916E8,0x07CE8,224,19,火神召喚,Summon Fire God
+item,0x09173C,0x07D3C,225,19,急救,First Aid
+item,0x091790,0x07D90,226,19,地動,Earthquake
+item,0x0917E4,0x07DE4,227,19,砂塵,Sandstorm
+item,0x091838,0x07E38,228,19,地網,Earth Net
+item,0x09188C,0x07E8C,229,19,地縛,Earthbind
+item,0x0918E0,0x07EE0,230,19,隕石,Meteor
+item,0x091934,0x07F34,231,19,飛刀,Flying Blade
+item,0x091988,0x07F88,232,19,石化,Petrify
+item,0x0919DC,0x07FDC,233,19,回復戰力,Restore Power
+item,0x091A30,0x08030,234,19,土神召喚,Summon Earth God
+item,0x091A84,0x08084,235,19,醫療,Heal
+item,0x091AD8,0x080D8,236,19,解毒,Antidote
+item,0x091B2C,0x0812C,237,19,活血,Bloodflow
+item,0x091B80,0x08180,238,19,碎石,Stonebreak
+item,0x091BD4,0x081D4,239,19,啞口,Silence
+item,0x091C28,0x08228,240,19,回魂,Revive
+item,0x091C7C,0x0827C,241,19,陰風,Dark Wind
+item,0x091CD0,0x082D0,242,19,大拯救,Great Rescue
+item,0x091D24,0x08324,243,19,慘霧,Grim Mist
+item,0x091D78,0x08378,244,19,風神召喚,Summon Wind God
+item,0x091DCC,0x083CC,245,19,化妝箱,Makeup Case
+item,0x091E20,0x08420,246,19,絢麗面具,Ornate Mask
+item,0x091E74,0x08474,247,19,女子衣服,Woman's Clothes
+item,0x091EC8,0x084C8,248,19,文字卷軸,Text Scroll
+item,0x091F1C,0x0851C,249,19,變形藥水,Transform Potion
+item,0x091F70,0x08570,250,19,鋸子,Saw
+item,0x091FC4,0x085C4,251,19,黑皮書,Black Book
+item,0x092018,0x08618,252,19,枯骨法器,Bone Talisman
+item,0x09206C,0x0866C,253,19,斑瀾文簡,Resplendent Slips
+item,0x0920C0,0x086C0,254,19,孤莎草,Lone Sedge
+item,0x092114,0x08714,255,19,魂應鼓,Soul Echo Drum
+item,0x092168,0x08768,256,19,紫衣,Purple Robe
+item,0x0921BC,0x087BC,257,19,朱冠,Crimson Crown
+item,0x092210,0x08810,258,19,蓮花若木,Lotus Ruo-Tree
+item,0x092264,0x08864,259,19,象牙,Ivory
+item,0x0922B8,0x088B8,260,19,拯救亡靈符,Soul Rescue Charm
+item,0x09230C,0x0890C,261,19,未見箴圖,Unseen Admonition
+item,0x092360,0x08960,262,19,命石,Life Stone
+item,0x0923B4,0x089B4,263,19,古銅幣,Old Bronze Coin
+item,0x092408,0x08A08,264,19,盾牌,Shield
+item,0x09245C,0x08A5C,265,19,弓弩,Crossbow
+item,0x0924B0,0x08AB0,266,19,鐵鑰匙,Iron Key
+item,0x092504,0x08B04,267,19,金銀鑰匙,Gold-Silver Key
+item,0x092558,0x08B58,268,19,火種,Tinder
+item,0x0925AC,0x08BAC,269,19,信,Letter
+item,0x092600,0x08C00,270,19,紅寶石,Ruby
+item,0x092654,0x08C54,271,19,祭文之杖,Staff of Rites
+item,0x0926A8,0x08CA8,272,19,古棺鑰匙,Coffin Key
+item,0x0926FC,0x08CFC,273,19,鏟子,Shovel
+item,0x092750,0x08D50,274,19,恐懼的淚水,Tears of Fear
+item,0x0927A4,0x08DA4,275,19,臥房鑰匙,Bedroom Key
+item,0x0927F8,0x08DF8,276,19,解脫橄欖,Olive of Release
+item,0x09284C,0x08E4C,277,19,銀匕首,Silver Dagger
+item,0x0928A0,0x08EA0,278,19,天玉,Heavenly Jade
+item,0x0928F4,0x08EF4,279,19,真絹,True Silk
+item,0x092948,0x08F48,280,19,家書,Family Letter
+item,0x09299C,0x08F9C,281,19,炸藥,Explosives
+item,0x0929F0,0x08FF0,282,19,雲雷風鼓,Cloud-Thunder Drum
+item,0x092A44,0x09044,283,19,釋聖經,Holy Scripture
+item,0x092A98,0x09098,284,19,左花扇,Left Flower Fan
+item,0x092AEC,0x090EC,285,19,右花扇,Right Flower Fan
+item,0x092B40,0x09140,286,19,童屍,Child Corpse
+item,0x092B94,0x09194,287,19,玄白赤鼎,Tricolor Cauldron
+item,0x092BE8,0x091E8,288,19,泊天神蛹,Heavenbound Pupa
+item,0x092C3C,0x0923C,289,19,白磁磚,White Tile
+item,0x092C90,0x09290,290,19,紫鑰匙,Purple Key
+item,0x092CE4,0x092E4,291,19,飛鏢,Throwing Dart
+item,0x092D38,0x09338,292,19,牛馬角,Ox-Horse Horn
+item,0x092D8C,0x0938C,293,19,約書亞樹枝,Joshua Branch
+item,0x092DE0,0x093E0,294,19,九天乾坤,Ninefold Heaven
+item,0x092E34,0x09434,295,19,潘尼羅亞茶,Pennyroyal Tea
+item,0x092E88,0x09488,296,19,沁冰刻刀,Icy Carving Knife
+item,0x092EDC,0x094DC,297,19,溫熱手鐲,Warm Bracelet
+item,0x092F30,0x09530,298,19,ＣＤ,CD
+item,0x092F84,0x09584,299,19,獐牙,Deer Fang
+item,0x092FD8,0x095D8,300,19,假髮,Wig
+item,0x09302C,0x0962C,301,19,肚兜,Bodice
+item,0x093080,0x09680,302,19,蛙足,Frog Leg
+item,0x0930D4,0x096D4,303,19,金烏,Golden Crow
+item,0x093128,0x09728,304,19,四羊,Four Rams
+item,0x09317C,0x0977C,305,19,枯萎豎笛,Withered Flute
+item,0x0931D0,0x097D0,306,19,子燭,Child Candle
+item,0x093224,0x09824,307,19,克勞蒂香水,Claudie Perfume
+item,0x093278,0x09878,308,19,野餐盒,Picnic Box
+item,0x0932CC,0x098CC,309,19,陰影銅環,Shadow Bronze Ring
+item,0x093320,0x09920,310,19,泊天神俑,Heavenbound Effigy
+item,0x093374,0x09974,311,19,大眼童屍,Big-Eyed Corpse
+item,0x0933C8,0x099C8,312,19,紅蠟燭,Red Candle
+item,0x09341C,0x09A1C,313,19,橘蠟燭,Orange Candle
+item,0x093470,0x09A70,314,19,藍蠟燭,Blue Candle
+item,0x0934C4,0x09AC4,315,19,綠蠟燭,Green Candle
+spell,0x093768,0x09D68,0,19,回    復,Recover
+spell,0x0937A8,0x09DA8,1,19,水    波,Water Wave
+spell,0x0937E8,0x09DE8,2,19,冷    凍,Freeze
+spell,0x093828,0x09E28,3,19,疲    倦,Fatigue
+spell,0x093868,0x09E68,4,19,水    鬼,Water Wraith
+spell,0x0938A8,0x09EA8,5,19,水    壓,Water Press
+spell,0x0938E8,0x09EE8,6,19,水    柱,Water Column
+spell,0x093928,0x09F28,7,19,冰    蜂,Ice Bee
+spell,0x093968,0x09F68,8,19,血    雨,Blood Rain
+spell,0x0939A8,0x09FA8,9,19,水神召喚,Summon Water God
+spell,0x0939E8,0x09FE8,10,19,星    火,Starfire
+spell,0x093A28,0x0A028,11,19,火    燄,Flame
+spell,0x093A68,0x0A068,12,19,虹    彩,Rainbow
+spell,0x093AA8,0x0A0A8,13,19,火    弩,Fire Bolt
+spell,0x093AE8,0x0A0E8,14,19,吸 血 手,Bloodsuck Hand
+spell,0x093B28,0x0A128,15,19,閃    電,Lightning
+spell,0x093B68,0x0A168,16,19,火    海,Sea of Fire
+spell,0x093BA8,0x0A1A8,17,19,爆    破,Explosion
+spell,0x093BE8,0x0A1E8,18,19,火    龍,Fire Dragon
+spell,0x093C28,0x0A228,19,19,火神召喚,Summon Fire God
+spell,0x093C68,0x0A268,20,19,急    救,First Aid
+spell,0x093CA8,0x0A2A8,21,19,地    動,Earthquake
+spell,0x093CE8,0x0A2E8,22,19,砂    塵,Sandstorm
+spell,0x093D28,0x0A328,23,19,地    網,Earth Net
+spell,0x093D68,0x0A368,24,19,地    縛,Earthbind
+spell,0x093DA8,0x0A3A8,25,19,隕    石,Meteor
+spell,0x093DE8,0x0A3E8,26,19,飛    刀,Flying Blade
+spell,0x093E28,0x0A428,27,19,石    化,Petrify
+spell,0x093E68,0x0A468,28,19,回復戰力,Restore Power
+spell,0x093EA8,0x0A4A8,29,19,土神召喚,Summon Earth God
+spell,0x093EE8,0x0A4E8,30,19,醫    療,Heal
+spell,0x093F28,0x0A528,31,19,解    毒,Antidote
+spell,0x093F68,0x0A568,32,19,活    血,Bloodflow
+spell,0x093FA8,0x0A5A8,33,19,碎    石,Stonebreak
+spell,0x093FE8,0x0A5E8,34,19,啞    口,Silence
+spell,0x094028,0x0A628,35,19,回    魂,Revive
+spell,0x094068,0x0A668,36,19,陰    風,Dark Wind
+spell,0x0940A8,0x0A6A8,37,19,大 拯 救,Great Rescue
+spell,0x0940E8,0x0A6E8,38,19,慘    霧,Grim Mist
+spell,0x094128,0x0A728,39,19,風神召喚,Summon Wind God
+spell,0x094168,0x0A768,40,19,中    毒,Poisoned
+spell,0x0941A8,0x0A7A8,41,19,石    化,Petrified
+spell,0x0941E8,0x0A7E8,42,19,痲    痺,Paralyzed
+spell,0x094228,0x0A828,43,19,戰鬥不能,Incapacitated
+spell,0x094268,0x0A868,44,19,催    眠,Asleep
+spell,0x0942A8,0x0A8A8,45,19,蝸 牛 怪,Snail
+spell,0x0942E8,0x0A8E8,46,19,蠍    子,Scorpion
+spell,0x094328,0x0A928,47,19,瘟疫使者,Plague Bearer
+spell,0x094368,0x0A968,48,19,白 骨 魔,Skeleton
+spell,0x0943A8,0x0A9A8,49,19,蝙 蝠 王,Bat King
+spell,0x0943E8,0x0A9E8,50,19,狐 狸 精,Fox Spirit
+spell,0x094428,0x0AA28,51,19,巫 術 王,Witch King
+spell,0x094468,0x0AA68,52,19,牛 馬 怪,Ox-Horse Fiend
+spell,0x0944A8,0x0AAA8,53,19,裸 女 一,Succubus I
+spell,0x0944E8,0x0AAE8,54,19,裸 女 二,Succubus II
+spell,0x094528,0x0AB28,55,19,痛苦使者,Pain Bearer
+spell,0x094568,0x0AB68,56,19,摩 羅 王,Mara King

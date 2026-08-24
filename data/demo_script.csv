@@ -1,0 +1,22 @@
+﻿file,record,speaker,who,bytes_used,max_bytes,chinese,english
+demo.msg,0,07,Boy,36,199,大哥哥，我好想回家，你放我走好不好？,"Mister, I want to go home so badly. Please, will you let me down?"
+demo.msg,1,01,Hero,14,199,好！我放你下來,All right. I'll get you down.
+demo.msg,2,01,Hero,26,199,以後不要在街上亂丟石頭了！,"And no more throwing stones in the street, understand?"
+demo.msg,3,07,Boy,38,199,好的，大哥哥！我要回家了，大哥哥再見！,"I promise, mister! I'm going home now. Goodbye!"
+demo.msg,4,08,Guard,56,199,小孩子怎麼不見了？你在這幹嗎？小子．．．人是你放走的吧！,Where did the boy go? What are you doing here? You... you're the one who cut him down!
+demo.msg,5,01,Hero,22,199,我的直覺告訴我趕快跑！,Every instinct I have is telling me to run.
+demo.msg,6,09,Old woman,46,199,是誰？你人在那裡？我的眼睛不好，出個聲好不好？,"Who's there? Where are you? My eyes are bad. Say something, would you?"
+demo.msg,7,01,Hero,42,199,老婆婆我．．．我有點麻煩，你能不能幫助我？,"Grandmother, I... I'm in some trouble. Could you help me?"
+demo.msg,8,01,Hero,42,199,有個小男孩因拿石頭砸到修斯王子而被吊在樹上,"A boy threw a stone at Prince Sius, and they strung him up in a tree for it."
+demo.msg,9,01,Hero,60,199,我放走那孩子碰巧被衛兵看到，現在我如被追逐的獵物般無處可躲！,I cut him down and a guard happened to see me. Now I'm hunted game with nowhere to hide.
+demo.msg,10,09,Old woman,52,199,小男孩的事情我也聽說過．．．修斯王子是個喜怒無常的人,I heard about that boy... Prince Sius is a man of sudden moods.
+demo.msg,11,09,Old woman,28,199,樓上有個窗子，你往那逃走吧！,"There's a window upstairs. Go out that way, quickly!"
+demo.msg,12,08,Guard,24,199,是不是有個混蛋來過這裡？,Has some bastard come through here?
+demo.msg,13,09,Old woman,16,199,沒．．沒．．有！,N-no... no one!
+demo.msg,14,08,Guard,38,199,有人看到他跑到妳家，不介意我們檢查吧！,He was seen running to your house. You won't mind if we take a look.
+demo.msg,15,09,Old woman,32,199,你們想怎樣？求求你們不要為難我！,"What do you want from me? Please, don't do this!"
+demo.msg,16,08,Guard,54,199,我上樓發現了推開的窗子與腳印，顯然這老女人欺騙了我們！,"Upstairs I found the window pushed open, and footprints. The old woman lied to us."
+demo.msg,17,08,Guard,58,199,老太婆妳用不著擺著一副驚慌無措的表情！早點結束對妳我都好！,"Don't put on that frightened face, old woman. The sooner this ends, the better for us both."
+demo.msg,18,08,Guard,30,199,總要有個交差的對像，妳去死吧！,Someone has to answer for it. Die.
+demo.msg,19,02,Hero (narration),58,199,這算什麼！怯懦的行為，荒謬的過程！無理的暴行，悲慘的結果！,"What was that? A coward's act, an absurd pretext. Senseless brutality, a wretched end."
+demo.msg,20,03,Hero (narration),52,199,這到底是個什麼朝代．．．？我要推翻它，一定要推翻它！,What kind of dynasty is this...? I will bring it down. I swear I will bring it down.
